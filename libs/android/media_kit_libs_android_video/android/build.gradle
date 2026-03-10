@@ -58,10 +58,10 @@ task downloadDependencies(type: Exec) {
 
         // Download all *.jar dependencies & verify their SHA-256 checksums.
         def filesToDownload = [
-            ["url": "https://github.com/123seven/libmpv-android-video-build/releases/download/v1.2.4/default-arm64-v8a.jar", "sha256": "992b3fac1ee62014411c75037d8646dd3d06d88cc60448040c6438923e85c75c", "destination": file("$buildDir/v1.2.4/default-arm64-v8a.jar")],
-            ["url": "https://github.com/123seven/libmpv-android-video-build/releases/download/v1.2.4/default-armeabi-v7a.jar", "sha256": "c0ce9c37b16bca8c398bd0156497a7a94c9b8d26fb36da16cbd1207f67f1fddc", "destination": file("$buildDir/v1.2.4/default-armeabi-v7a.jar")],
-            ["url": "https://github.com/123seven/libmpv-android-video-build/releases/download/v1.2.4/default-x86_64.jar", "sha256": "c9de37186b8a72f5873774bfddd50268e51d4bbd0aebca835f8a59a1a3a39142", "destination": file("$buildDir/v1.2.4/default-x86_64.jar")],
-            ["url": "https://github.com/123seven/libmpv-android-video-build/releases/download/v1.2.4/default-x86.jar", "sha256": "f5c9fd583138545a6ce97c8d2a645089fe2179fcee5831ab53ac5e707f82d141", "destination": file("$buildDir/v1.2.4/default-x86.jar")]
+            ["url": "https://github.com/123seven/libmpv-android-video-build/releases/download/untagged-6e608b8debec5f0b1beb/default-arm64-v8a.jar", "sha256": "7931f910f40627d3d5cb2c7424935590ead30660c9b26cc340743667f3f30aa6", "destination": file("$buildDir/v1.2.4/default-arm64-v8a.jar")],
+            ["url": "https://github.com/123seven/libmpv-android-video-build/releases/download/untagged-6e608b8debec5f0b1beb/default-armeabi-v7a.jar", "sha256": "bad425de4ebc34efc15eb74465efcf509353fd7c6a52db27bd8091e42b3b82f9", "destination": file("$buildDir/v1.2.4/default-armeabi-v7a.jar")],
+            ["url": "https://github.com/123seven/libmpv-android-video-build/releases/download/untagged-6e608b8debec5f0b1beb/default-x86_64.jar", "sha256": "479af23318d49f13f7d4aa756214b86890aedfe819381d85ce31772c237a4bbc", "destination": file("$buildDir/v1.2.4/default-x86_64.jar")],
+            ["url": "https://github.com/123seven/libmpv-android-video-build/releases/download/untagged-6e608b8debec5f0b1beb/default-x86.jar", "sha256": "70f3a4c95f7310231de08af3ca71b479d0adbdf5fa29981294e7568eb8d44f1f", "destination": file("$buildDir/v1.2.4/default-x86.jar")]
         ]
 
         filesToDownload.each { fileInfo ->
